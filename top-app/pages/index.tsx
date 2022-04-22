@@ -1,6 +1,7 @@
 import { Htag } from "../components";
 import { Button } from "../components";
 import { P } from "../components";
+import { Tag } from "../components";
 
 
 export default function Home(): JSX.Element {
@@ -15,9 +16,21 @@ export default function Home(): JSX.Element {
       <P fontSize="s">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam repellendus fugiat deleniti possimus est dicta voluptatibus dolor distinctio quo, quibusdam eligendi iusto, quis modi odit provident, accusantium iste ipsam?
       </P>
-      <P fontSize="l">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam repellendus fugiat deleniti possimus est dicta voluptatibus dolor distinctio quo, quibusdam eligendi iusto, quis modi odit provident, accusantium iste ipsam?
-      </P>
+      <Tag size="m">
+        Lorem ipsum 
+      </Tag>
+      <Tag size="m" color="red">
+        Lorem ipsum 
+      </Tag>
+      <Tag size="s" color="grey">
+        Lorem ipsum 
+      </Tag>
+      <Tag size="m" color="green">
+        Lorem ipsum 
+      </Tag>
+      <Tag size="s" color="primary" href="#">
+        Lorem ipsum 
+      </Tag>
     </div>
   );
 }
