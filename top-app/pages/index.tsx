@@ -1,14 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Htag, Button, P, Tag, Rating } from "../components";
+import { Layout, withLayout } from '../layout/Layout';
 
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
   const [rating, setRating] = useState<number>(4);
 
 
     
   return (
-    <div>
+    <>
       <Htag tag={'h1'}>Рейтинги!</Htag>
       <Button appearance='primary' arrow="right" >Кнопка</Button>
       <Button appearance='ghost' arrow="down">Кнопка</Button>
@@ -34,6 +35,8 @@ export default function Home(): JSX.Element {
         Lorem ipsum 
       </Tag>
       <Rating rating={rating} isEditable={true} setRating={setRating}/>
-    </div>
+    </>
   );
 }
+
+export default withLayout(Home);
