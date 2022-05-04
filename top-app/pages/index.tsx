@@ -38,9 +38,7 @@ function Home({menu}: HomeProps): JSX.Element {
         Lorem ipsum 
       </Tag>
       <Rating rating={rating} isEditable={true} setRating={setRating} />
-      <ol>
-        {menu.map(m => (<li key={m._id.secondCategory}>{m._id.secondCategory}</li>))}
-      </ol>
+
     </>
   );
 }
