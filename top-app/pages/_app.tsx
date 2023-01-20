@@ -2,6 +2,8 @@ import { AppProps } from 'next/dist/shared/lib/router/router';
 import '../styles/globals.scss';
 import Head from 'next/head';
 
+//test for ssh
+
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <>
     <Head>
