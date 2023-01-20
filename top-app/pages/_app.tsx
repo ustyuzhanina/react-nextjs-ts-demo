@@ -2,7 +2,7 @@ import { AppProps } from 'next/dist/shared/lib/router/router';
 import '../styles/globals.scss';
 import Head from 'next/head';
 
-//test for ssh 2
+//test for ssh 3
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <>
